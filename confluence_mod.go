@@ -10,7 +10,6 @@ func (api *API) CreatePage(title, spaceKey, value string) (*ContentCollection, e
 			StorageView: &View{Value: value, Representation: "storage"},
 		},
 	}
-	
 	statusCode, err := api.doRequest(
 		"POST", "/rest/api/content",
 		nil, result, req,
