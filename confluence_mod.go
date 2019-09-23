@@ -14,7 +14,6 @@ func (api *API) CreatePage(title, spaceKey, value string) (*ContentCollection, e
 		"POST", "/rest/api/content",
 		nil, result, req,
 	)
-
 	if err != nil {
 		return nil, err
 	}
